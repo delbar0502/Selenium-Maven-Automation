@@ -1,4 +1,5 @@
 package com.dice;
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -45,10 +46,11 @@ public class DiceJobSearch {
 		
 		//you can also use submit.
 	  WebElement  webElement= driver.findElement(By.id("posiCountId"));
-	  System.out.println("Have "+webElement.getText()+"result");
+	  System.out.println("Have   "+webElement.getText()+"   result");
 	  
 	  
 	  driver.close();
+	  System.out.println("Test Completed-" + LocalDateTime.now());
 	  
 	}
 
